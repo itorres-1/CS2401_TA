@@ -136,6 +136,7 @@ public class Lab5Tester implements Lab5Interface {
                 Util.printAndWrite("+25 in correctness", w);
                 correctness += 25;
             }
+            //Commit me!
         }
         catch (Exception e){
             System.out.println("Something went wrong :(");
