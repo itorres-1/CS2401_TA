@@ -1,6 +1,6 @@
 package Testers;
 
-import Lab5.Padron5;
+import Lab5.*;
 import Testers.LabInterfaces.Lab5Interface;
 
 import java.io.File;
@@ -16,70 +16,8 @@ import java.util.Random;
  * Instructor:
  * T.A:
  */
-public class Lab5Tester implements Lab5Interface {
-
-    //Utility
-    public static void swapElements(int[] A, int i, int j){
-        int tmp = A[i];
-        A[i] = A[j];
-        A[j] = tmp;
-    }
-
-    public static void bubbleSortHelper(int[] A, int low, int high){
-        if (low >= high) return;
-        else {
-            for (int i = 1; i < high; i++) {
-                if (A[i-1] > A[i]) swapElements(A, i, i-1);
-            }
-            bubbleSortHelper(A,low,high-1);
-        }
-    }
-    @Override
-    public void rBubbleSort(int[] A) {
-        bubbleSortHelper(A,0,A.length);
-    }
-
-    public static void selectionSortHelper(int[] A, int low, int high){
-        if (low >= high) return;
-        else {
-            int lowestIndex = low;
-            for (int i = low+1; i < high;++i){
-                if (A[i] < A[lowestIndex]) {
-                 lowestIndex = i;
-                }
-            }
-            swapElements(A,low,lowestIndex);
-            selectionSortHelper(A,low+1,high);
-        }
-    }
-    @Override
-    public void rSelectionSort(int[] A) {
-        selectionSortHelper(A,0,A.length);
-    }
-
-    @Override
-    public void rInsertionSort(int[] A) {
-
-    }
-
-    @Override
-    public void iQuickSort(int[] A) {
-
-    }
-
-    @Override
-    public void iMergeSort(int[] A) {
-
-    }
-
-    public static int[] unsortedArrayOfSize(int n){
-        int[] unsortedArray = new int[n];
-        Random random = new Random();
-        for (int i = 0; i < unsortedArray.length; i++) {
-            unsortedArray[i]=random.nextInt(n);
-        }
-        return unsortedArray;
-    }
+public class Lab5Tester {
+    
     public static ArrayList<Integer> makeArrayList(int[] A){
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < A.length; i++) {
@@ -102,9 +40,10 @@ public class Lab5Tester implements Lab5Interface {
         int[] studentResult;
         int correctness = 0;
         Boolean isSorted;
-        Padron5 student = new Padron5();
-        String fileName = student.getClass().toString().split(" ")[1]+".txt";
 
+        Padron5 student = new Padron5();
+
+        String fileName = student.getClass().toString().split(" ")[1]+".txt";
         File studentOutputFile = new File(fileName);
         try(PrintWriter w = new PrintWriter(studentOutputFile)) {
 
@@ -116,27 +55,70 @@ public class Lab5Tester implements Lab5Interface {
             //BubbleSort
             Util.printAndWrite(Util.titleString("rBubbleSort"), w);
             studentResult = unsortedArray.clone();
-            student.rBubbleSort(studentResult);
-            Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
-            isSorted = isSorted(studentResult);
-            Util.printAndWrite("Sorted: "+isSorted,w );
-            if (isSorted) {
-                Util.printAndWrite("+25 in correctness", w);
-                correctness += 25;
+            try{
+                student.rBubbleSort(studentResult);
+                Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
+                isSorted = isSorted(studentResult);
+                Util.printAndWrite("Sorted: "+isSorted,w );
+                if (isSorted) {
+                    Util.printAndWrite("+25 in correctness", w);
+                    correctness += 16.6666666666;
+                }
+            }catch (Exception e){
+                Util.printAndWrite("Your code crashed! :(",w );
             }
 
             //SelectionSort
             Util.printAndWrite(Util.titleString("rSelectionSort"), w);
             studentResult = unsortedArray.clone();
-            student.rSelectionSort(studentResult);
-            Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
-            isSorted = isSorted(studentResult);
-            Util.printAndWrite("Sorted: "+isSorted,w );
-            if (isSorted) {
-                Util.printAndWrite("+25 in correctness", w);
-                correctness += 25;
+            try{
+                student.rSelectionSort(studentResult);
+                Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
+                isSorted = isSorted(studentResult);
+                Util.printAndWrite("Sorted: "+isSorted,w );
+                if (isSorted) {
+                    Util.printAndWrite("+25 in correctness", w);
+                    correctness += 16.6666666666;
+                }
+            }catch (Exception e){
+                Util.printAndWrite("Your code crashed! :(",w );
             }
-            //Commit me!
+
+            //InsertionSort
+            Util.printAndWrite(Util.titleString("rInsertionSort"), w);
+            studentResult = unsortedArray.clone();
+            try{
+                student.rInsertionSort(studentResult);
+                Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
+                isSorted = isSorted(studentResult);
+                Util.printAndWrite("Sorted: "+isSorted,w );
+                if (isSorted) {
+                    Util.printAndWrite("+25 in correctness", w);
+                    correctness += 16.6666666666;
+                }
+            }catch (Exception e){
+                Util.printAndWrite("Your code crashed! :(",w );
+            }
+
+            //QuickSort
+            Util.printAndWrite(Util.titleString("iQuickSort"), w);
+            studentResult = unsortedArray.clone();
+            try{
+                student.iQuickSort(studentResult);
+                Util.printAndWrite("Output:" + makeArrayList(studentResult) + " ", w);
+                isSorted = isSorted(studentResult);
+                Util.printAndWrite("Sorted: "+isSorted,w );
+                if (isSorted) {
+                    Util.printAndWrite("+25 in correctness", w);
+                    correctness += 16.6666666666;
+                }
+            }catch (Exception e){
+                Util.printAndWrite("Your code crashed! :(",w );
+            }
+
+
+            Util.printAndWrite(Util.titleString("Grade"),w );
+            Util.printAndWrite("correctness: "+correctness,w );
         }
         catch (Exception e){
             System.out.println("Something went wrong :(");
