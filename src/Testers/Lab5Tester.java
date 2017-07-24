@@ -1,5 +1,6 @@
 package Testers;
 
+import Lab1.Tinevra;
 import Lab5.*;
 import Testers.LabInterfaces.Lab5Interface;
 
@@ -17,7 +18,7 @@ import java.util.Random;
  * T.A:
  */
 public class Lab5Tester {
-    
+    static int[] unsortedArray = {9,0,8,1,7,2,6,3,5,4};
     public static ArrayList<Integer> makeArrayList(int[] A){
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < A.length; i++) {
@@ -34,14 +35,12 @@ public class Lab5Tester {
         }
         return null;
     }
-
     public static void main(String[] args) {
-        int[] unsortedArray = {9,0,8,1,7,2,6,3,5,4};
         int[] studentResult;
         int correctness = 0;
         Boolean isSorted;
 
-        Padron5 student = new Padron5();
+        Wiggs5 student = new Wiggs5();
 
         String fileName = student.getClass().toString().split(" ")[1]+".txt";
         File studentOutputFile = new File(fileName);
@@ -123,7 +122,5 @@ public class Lab5Tester {
         catch (Exception e){
             System.out.println("Something went wrong :(");
         }
-
-
     }
 }

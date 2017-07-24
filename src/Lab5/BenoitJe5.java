@@ -7,6 +7,7 @@ package Lab5; /**
  * Purpose: Translate sorting algorithms into an iterative algorithm or recursive algorithm
  */
 import Testers.LabInterfaces.Lab5Interface;
+import Testers.Util;
 
 import java.io.*;
 import java.util.*;
@@ -20,6 +21,8 @@ public class BenoitJe5 implements Lab5Interface {
      * @return a sorted array
      */
     public int[] rBubbleSortHelper(int[] A, int currentIndex) {
+        Util.print1Dint(A);
+
         int comparisons = 0;
 
         for (int i = currentIndex; i < A.length; i++) {
@@ -59,6 +62,8 @@ public class BenoitJe5 implements Lab5Interface {
      * @return a sorted int array
      */
     public int[] rSelectionSortHelper(int[] A, int currentIndex) {
+        Util.print1Dint(A);
+
         int comparisons = 0;
         int minIndex = currentIndex;
 
@@ -97,6 +102,8 @@ public class BenoitJe5 implements Lab5Interface {
      * @return a sorted int array
      */
     public int[] rInsertionSortHelper(int[] A, int currentIndex) {
+        Util.print1Dint(A);
+
         int comparisons = 0;
         for (int i = 0; i < A.length; i++) {
 
@@ -261,12 +268,19 @@ public class BenoitJe5 implements Lab5Interface {
         //test.generateAllFiles();
         //test.runAllSortingMethods("File 1.txt");
 
-        BenoitJe5 object = new BenoitJe5();
-        String testFile  = "testFile.txt";
-        object.generateFile(4,testFile);
-        int[] read = object.readFile(testFile);
-        for (int i = 0; i < read.length; i++) {
-            System.out.print(read[i]+" ");
-        }
+        BenoitJe5 k = new BenoitJe5();
+        int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
+
+        System.out.print(Util.titleString("BubbleSort"));
+        k.rBubbleSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("InsertionSort"));
+        k.rInsertionSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("SelectionSort"));
+        k.rSelectionSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("QuickSort"));
+        k.iQuickSort(unsortedArray.clone());
     }
 }

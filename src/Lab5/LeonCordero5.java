@@ -1,4 +1,6 @@
 package Lab5;
+import Testers.Util;
+
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -29,6 +31,7 @@ public class LeonCordero5 {
      * @return  (int array) this returns the sorted array.
      */
     private int[] rBubbleSortHelper(int[] A, int n) {
+        Util.print1Dint(A);
         boolean needNextPass = false;
         for(int i = 0; i < n - 1; i++) {
             if(A[i] > A[i + 1]) {
@@ -68,6 +71,7 @@ public class LeonCordero5 {
      * @return (int array) this returns the sorted array.
      */
     private int[] rSelectionSortHelper(int[] A, int low, int high) {
+        Util.print1Dint(A);
         if(low == high) {
             return A;
         } else {
@@ -107,6 +111,7 @@ public class LeonCordero5 {
      * @return (int array) this returns the sorted array.
      */
     private int[] rInsertionSortHelper(int[] A, int n) {
+        Util.print1Dint(A);
         if(n == A.length) {
             return A;
         } else {
@@ -243,7 +248,22 @@ public class LeonCordero5 {
         return array;
     }
 
-//    public static void main(String[] args) {
+    public static void main(String[] args) {
+        LeonCordero5 k = new LeonCordero5();
+        int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
+
+        System.out.print(Util.titleString("BubbleSort"));
+        k.rBubbleSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("InsertionSort"));
+        k.rInsertionSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("SelectionSort"));
+        k.rSelectionSort(unsortedArray.clone());
+
+        System.out.print(Util.titleString("QuickSort"));
+        //k.iQuickSort(unsortedArray.clone());
+
 //        LeonCordero5 object = new LeonCordero5();
 //        for(int i  = 100; i <= 3200; i = i*2){
 //            generateFile(i + ".txt", i);
@@ -253,5 +273,5 @@ public class LeonCordero5 {
 //            int[] array = readArrayFromFile(i + ".txt", i);
 //            object.iQuickSort(array, 0, array.length - 1);
 //        }
-//    }
+    }
 }

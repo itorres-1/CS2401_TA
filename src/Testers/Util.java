@@ -36,6 +36,8 @@ public class Util {
         }
         return "\n"+printLine+"\n";
     }
+
+    //Printing methods
     public static void printGradeSoFar(Double correctness, Double robustness){
         System.out.printf("Correctness = %.1f\n",correctness);
         System.out.printf("Robustness = %.0f\n",robustness);
@@ -44,4 +46,13 @@ public class Util {
         System.out.println(str);
         P.println(str);
     }
+
+    //Matrices:
+    public static void print1Dint(int[] A){
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(A[i]+" ");
+        }
+        System.out.println();
+    }
+
 }
