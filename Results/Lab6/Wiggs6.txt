@@ -1,0 +1,9 @@
+
+Student: Wiggs
+Lab: 6
+
+------------------------- (- 3 ^ 2 2) -------------------------
+
+Correct: -1.0
+Your result: null
+yeyyy

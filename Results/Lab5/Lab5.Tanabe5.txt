@@ -1,0 +1,40 @@
+
+Student: Tanabe
+Lab: 5
+
+---------------------------- START ----------------------------
+
+Input: [9, 0, 8, 1, 7, 2, 6, 3, 5, 4]
+
+------------------------- rBubbleSort -------------------------
+
+Output:[9, 0, 8, 1, 7, 2, 6, 3, 5, 4] 
+Sorted: false
+
+----------------------- rSelectionSort -----------------------
+
+Output:[9, 0, 8, 1, 7, 2, 6, 3, 5, 4] 
+Sorted: false
+
+----------------------- rInsertionSort -----------------------
+
+Output:[9, 0, 8, 1, 7, 2, 6, 3, 5, 4] 
+Sorted: false
+
+------------------------- iQuickSort -------------------------
+
+Output:[9, 0, 8, 1, 7, 2, 6, 3, 5, 4] 
+Sorted: false
+
+---------------------------- Grade ----------------------------
+
+
+Did exactly what I said not to do through e-mail AND class about implementing
+requested methods as nothing but dummy stubs that do nothing and do not call
+the code requested of the lab. -20 correctness points
+
+No file write or read?
+
+Code is not indented properly!
+
+correctness: 0
