@@ -1,5 +1,6 @@
 package Testers;
 
+import java.io.File;
 import java.io.PrintWriter;
 
 /**
@@ -11,17 +12,24 @@ import java.io.PrintWriter;
  * T.A:
  */
 public class Util {
-    public static String headerString(Class C){
-        String headerString = "\nStudent: ";
-        String[] packageBreadcumbs = C.toString().split(" ");
-        String tmpString = packageBreadcumbs[1].replace('.',' ');
-        String[] packageAndClass = tmpString.split(" ") ;
-        String lastNameLab = packageAndClass[1];
+    //Getters
+    public static String getStudentName(Class student){
+        String studentName = student.toString().split(" ")[1].replace('.',' ').split(" ")[1];
+        return studentName.substring(0,studentName.length()-1);
+    }
+    public static int getLabNumber(Class student){
+        String studentName = student.toString().split(" ")[1].replace('.',' ').split(" ")[1];
+        return Integer.parseInt(studentName.substring(studentName.length()-1));
+    }
+    public static File getFile(String studentName, int labNumber){
+        String relativePath = "/Users/igtorres/IdeaProjects/CS2401_TA/Results/Lab"+labNumber+"/";
+        return new File(relativePath+studentName+labNumber+".txt");
+    }
 
-        headerString += lastNameLab.substring(0,lastNameLab.length()-1)+"\n";
-        headerString += "Lab: "+lastNameLab.substring(lastNameLab.length()-1)+"\n";
-        headerString += titleString("START");
-
+    public static String fileHeader(String studentName, int labNumber){
+        String headerString = "";
+        headerString += "\nStudent: "+studentName;
+        headerString += "\nLab: "+labNumber+"";
         return headerString;
     }
     public static String titleString(String str){

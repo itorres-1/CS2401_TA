@@ -1,13 +1,9 @@
 package Testers;
 
-import Lab1.Tinevra;
 import Lab5.*;
-import Testers.LabInterfaces.Lab5Interface;
 
-import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * Author: Isaac Torres
@@ -42,12 +38,16 @@ public class Lab5Tester {
 
         Wiggs5 student = new Wiggs5();
 
-        String fileName = student.getClass().toString().split(" ")[1]+".txt";
-        File studentOutputFile = new File(fileName);
-        try(PrintWriter w = new PrintWriter(studentOutputFile)) {
+        int labNumber = 5;
+        student = new Wiggs5();
+        String relativePath = "/Users/igtorres/IdeaProjects/CS2401_TA/Results/Lab"+labNumber+"/";
+        String studentName = student.getClass().toString().split(" ")[1].replace('.',' ').split(" ")[1];
+        studentName = studentName.substring(0,studentName.length()-1);
+        String fileName = relativePath+"Lab"+labNumber+"."+studentName+labNumber+".txt";
+        try(PrintWriter w = new PrintWriter(fileName)) {
 
             //Heading and Input
-            Util.printAndWrite(Util.headerString(student.getClass()),w );
+            Util.printAndWrite(Util.fileHeader(studentName,labNumber),w );
             String s = "Input: " + makeArrayList(unsortedArray);
             Util.printAndWrite(s, w);
             
