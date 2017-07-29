@@ -2,8 +2,85 @@
 Student: Wiggs
 Lab: 6
 
-------------------------- (- 3 ^ 2 2) -------------------------
+************************* Good Input *************************
+
+
+_________________________ "- 3 ^ 2 2" _________________________
 
 Correct: -1.0
-Your result: null
-yeyyy
+LStack crashed :(
+AStack crashed :(
+Correctness = 0.0
+
+________________________ "/ + 1 10 2" ________________________
+
+Correct: 5.5
+LStack crashed :(
+AStack crashed :(
+Correctness = 0.0
+
+________________ "* / ^ - + 2 3 10 2 250 100" ________________
+
+Correct: 10.0
+LStack crashed :(
+AStack crashed :(
+Correctness = 0.0
+
+************************** Bad Input **************************
+
+
+_____________________________ "" _____________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+__________________________ "+ 1 1 1" __________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+____________________________ "/ 1" ____________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+___________________________ "+ 1 A" ___________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+___________________________ "1 1 1" ___________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+___________________________ "/ 1 0" ___________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+$$$$$$$$$$$$$$$$$$$$$$$$$ Total Grade $$$$$$$$$$$$$$$$$$$$$$$$$
+
+Correctness: 0.0
+Robustness: 0.0
+
+Comments: Had to fix your pushA method in ArrayStack, called "isNumber" as if it was static.
+Actually, pushA is still bad design. What if can't parse? How will you know?
+
+Had told you to fix the push method in LLStack!
+
+Again, don't randomly sandwich main in the middle of unrelated methods.
+
+Lab Grade: 50

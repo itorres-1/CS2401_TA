@@ -1,5 +1,7 @@
 package Lab5;
 
+import Testers.Util;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
@@ -31,6 +33,7 @@ import java.util.Stack;
 			}
 
 		public void bubble(int[] A, int size) {
+			Util.print1Dint(A);
 			if (size>1) {
 	    	for (int i=0; i<A.length-1; i++) {
 	    		//counter++;
@@ -58,6 +61,7 @@ import java.util.Stack;
 	    }
 
 	    public void selection(int[] A, int rec){
+	    	Util.print1Dint(A);
 	    	//counter++;
 	    	if (rec < A.length) {
 	    		 int index = rec;
@@ -105,6 +109,7 @@ import java.util.Stack;
 	    }
 
 	    public void insertion(int[] A, int n) {
+	    	Util.print1Dint(A);
 	    	if (n < A.length) {
 	    		//counter++;
 	    		for (int j=n; j>0 && A[j]<A[j-1]; j--) {
@@ -219,6 +224,23 @@ import java.util.Stack;
 				System.out.println(a[i]);
 			}
 	    }
+
+	public static void main(String[] args) {
+		Moy5 k = new Moy5();
+		int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
+
+		System.out.print(Util.titleString("BubbleSort",'-'));
+		k.rBubbleSort(unsortedArray.clone());
+
+		System.out.print(Util.titleString("InsertionSort",'-'));
+		k.rInsertionSort(unsortedArray.clone());
+
+		System.out.print(Util.titleString("SelectionSort",'-'));
+		k.rSelectionSort(unsortedArray.clone());
+
+		System.out.print(Util.titleString("MergeSort",'-'));
+		k.iQuickSort(unsortedArray.clone());
+	}
 
 	}
 

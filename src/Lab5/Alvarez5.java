@@ -1,8 +1,8 @@
 package Lab5;
 
 
-
 import Testers.Lab5Tester;
+
 import Testers.LabInterfaces.Lab5Interface;
 import Testers.Util;
 
@@ -273,16 +273,16 @@ public class Alvarez5 implements Lab5Interface {
         Alvarez5 k = new Alvarez5();
         int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
 
-        System.out.print(Util.titleString("BubbleSort"));
+        System.out.print(Util.titleString("BubbleSort",'-'));
         k.rBubbleSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("InsertionSort"));
+        System.out.print(Util.titleString("InsertionSort",'-'));
         k.rInsertionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("SelectionSort"));
+        System.out.print(Util.titleString("SelectionSort",'-'));
         k.rSelectionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("MergeSort"));
+        System.out.print(Util.titleString("MergeSort",'-'));
         k.iMergeSort(unsortedArray.clone());
     }
 }

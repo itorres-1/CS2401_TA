@@ -36,23 +36,24 @@ public class Lab5Tester {
         int correctness = 0;
         Boolean isSorted;
 
-        Wiggs5 student = new Wiggs5();
+        Redekop5 student = new Redekop5();
 
+        //File Prep
         int labNumber = 5;
-        student = new Wiggs5();
-        String relativePath = "/Users/igtorres/IdeaProjects/CS2401_TA/Results/Lab"+labNumber+"/";
+        String relativePath = "/Users/tsc/IdeaProjects/CS2401_TA/Results/Lab"+labNumber+"/";
         String studentName = student.getClass().toString().split(" ")[1].replace('.',' ').split(" ")[1];
         studentName = studentName.substring(0,studentName.length()-1);
         String fileName = relativePath+"Lab"+labNumber+"."+studentName+labNumber+".txt";
-        try(PrintWriter w = new PrintWriter(fileName)) {
 
+        //Begin Test
+        try(PrintWriter w = new PrintWriter(fileName)) {
             //Heading and Input
             Util.printAndWrite(Util.fileHeader(studentName,labNumber),w );
             String s = "Input: " + makeArrayList(unsortedArray);
             Util.printAndWrite(s, w);
-            
+
             //BubbleSort
-            Util.printAndWrite(Util.titleString("rBubbleSort"), w);
+            Util.printAndWrite(Util.titleString("rBubbleSort",'-'), w);
             studentResult = unsortedArray.clone();
             try{
                 student.rBubbleSort(studentResult);
@@ -68,7 +69,7 @@ public class Lab5Tester {
             }
 
             //SelectionSort
-            Util.printAndWrite(Util.titleString("rSelectionSort"), w);
+            Util.printAndWrite(Util.titleString("rSelectionSort",'-'), w);
             studentResult = unsortedArray.clone();
             try{
                 student.rSelectionSort(studentResult);
@@ -84,7 +85,7 @@ public class Lab5Tester {
             }
 
             //InsertionSort
-            Util.printAndWrite(Util.titleString("rInsertionSort"), w);
+            Util.printAndWrite(Util.titleString("rInsertionSort",'-'), w);
             studentResult = unsortedArray.clone();
             try{
                 student.rInsertionSort(studentResult);
@@ -100,7 +101,7 @@ public class Lab5Tester {
             }
 
             //QuickSort
-            Util.printAndWrite(Util.titleString("iQuickSort"), w);
+            Util.printAndWrite(Util.titleString("iQuickSort",'-'), w);
             studentResult = unsortedArray.clone();
             try{
                 student.iQuickSort(studentResult);
@@ -116,7 +117,7 @@ public class Lab5Tester {
             }
 
 
-            Util.printAndWrite(Util.titleString("Grade"),w );
+            Util.printAndWrite(Util.titleString("Grade",'*'),w );
             Util.printAndWrite("correctness: "+correctness,w );
         }
         catch (Exception e){

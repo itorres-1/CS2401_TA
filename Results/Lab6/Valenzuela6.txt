@@ -1,0 +1,91 @@
+
+Student: Valenzuela
+Lab: 6
+
+************************* Good Input *************************
+
+
+_________________________ "- 3 ^ 2 2" _________________________
+
+Correct: -1.0
+LStack: -1.0
+AStack: -1.0
+Correctness = 33.333333333333336
+
+________________________ "/ + 1 10 2" ________________________
+
+Correct: 5.5
+LStack: 0.08333333333333333
+AStack: 0.08333333333333333
+Correctness = 33.333333333333336
+
+___________________ "* / ^ - + 2 3 1 2 5 9" ___________________
+
+Correct: 28.8
+LStack: 6.0
+AStack: 6.0
+Correctness = 33.333333333333336
+
+************************** Bad Input **************************
+
+
+_____________________________ "" _____________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+__________________________ "+ 1 1 1" __________________________
+
+Correct: null
+LStack: 2.0
+AStack: 2.0
+Robustness = 0.0
+
+____________________________ "/ 1" ____________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+___________________________ "+ 1 A" ___________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+___________________________ "1 1 1" ___________________________
+
+Correct: null
+LStack: 1.0
+AStack: 1.0
+Robustness = 0.0
+
+___________________________ "/ 1 0" ___________________________
+
+Correct: null
+LStack: Infinity
+AStack: Infinity
+Robustness = 0.0
+
+$$$$$$$$$$$$$$$$$$$$$$$$$ Total Grade $$$$$$$$$$$$$$$$$$$$$$$$$
+
+Correctness: 33.333333333333336
+Robustness: 0.0
+
+Comments:
+
+method not implemented properly (static instead of non-static.)
+
+-10 pts for not following naming convention of classes. (SHOULD BE CAPITALIZED)
+
+neither class checks if there are elements to pop before popping
+
+why split by "[ ]"?
+
+didn't comment any classes or methods within classes
+
+Final Grade: 64, but two days late...so 44. Marked as 4 days late to recieve more credit, 50.

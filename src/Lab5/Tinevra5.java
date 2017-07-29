@@ -77,7 +77,6 @@ public class Tinevra5 implements Lab5Interface {
      * @return the A array sorted in decreasing or increasing order
      */
     public static void insertionSort(int[]A,int n) {
-        Util.print1Dint(A);
         //n = length of the array
         if (n <= 1) {
             return;
@@ -93,7 +92,7 @@ public class Tinevra5 implements Lab5Interface {
             A[i + 1] = temp;
 
         }
-        return;
+        Util.print1Dint(A);
     }
 
     @Override
@@ -179,16 +178,16 @@ public class Tinevra5 implements Lab5Interface {
        Tinevra5 k = new Tinevra5();
        int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
 
-       System.out.print(Util.titleString("BubbleSort"));
+       System.out.print(Util.titleString("BubbleSort",'-'));
        k.rBubbleSort(unsortedArray.clone());
 
-       System.out.print(Util.titleString("InsertionSort"));
+       System.out.print(Util.titleString("InsertionSort",'-'));
        k.rInsertionSort(unsortedArray.clone());
 
-       System.out.print(Util.titleString("SelectionSort"));
+       System.out.print(Util.titleString("SelectionSort",'-'));
        k.rSelectionSort(unsortedArray.clone());
 
-       System.out.print(Util.titleString("QuickSort"));
+       System.out.print(Util.titleString("QuickSort",'-'));
        k.iQuickSort(unsortedArray.clone());
 
 //        String f = "file.txt";

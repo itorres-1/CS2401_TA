@@ -269,135 +269,135 @@ public class Boatright5 {
   }
 
   public static void main(String[] args) {
-    createTestFile(100, "Test100.txt");
-    createTestFile(200, "Test200.txt");
-    createTestFile(400, "Test400.txt");
-    createTestFile(800, "Test800.txt");
-    createTestFile(1600, "Test1600.txt");
-    createTestFile(3200, "Test3200.txt");
-
-    // **TEST** Bubble Sort (Recursive)
-    int[] A1 = readArrayFromFile(100, "Test100.txt");
-    int bubbleComp = bubbleSortR(A1, A1.length-1);
-    System.out.println("Bubble Sort (100):");
-    print(A1, bubbleComp);
-
-    int[] A2 = readArrayFromFile(200, "Test200.txt");
-    bubbleComp = bubbleSortR(A2, A2.length-1);
-    System.out.println("Bubble Sort (200):");
-    print(A2, bubbleComp);
-
-    int[] A3 = readArrayFromFile(400, "Test400.txt");
-    bubbleComp = bubbleSortR(A3, A3.length-1);
-    System.out.println("Bubble Sort (400):");
-    print(A3, bubbleComp);
-
-    int[] A4 = readArrayFromFile(800, "Test800.txt");
-    bubbleComp = bubbleSortR(A4, A4.length-1);
-    System.out.println("Bubble Sort (800):");
-    print(A4, bubbleComp);
-
-    int[] A5 = readArrayFromFile(1600, "Test1600.txt");
-    bubbleComp = bubbleSortR(A5, A5.length-1);
-    System.out.println("Bubble Sort (1600):");
-    print(A5, bubbleComp);
-
-    int[] A6 = readArrayFromFile(3200, "Test3200.txt");
-    bubbleComp = bubbleSortR(A6, A6.length-1);
-    System.out.println("Bubble Sort (3200):");
-    print(A6, bubbleComp);
-
-    // **TEST**  Selection Sort (Recursive)
-    int[] B1 = readArrayFromFile(100, "Test100.txt");
-    int selectionComp = selectionSortR(B1, 0, B1.length-1);
-    System.out.println("Selection Sort (100):");
-    print(B1, selectionComp);
-
-    int[] B2 = readArrayFromFile(200, "Test200.txt");
-    selectionComp = selectionSortR(B2, 0, B2.length-1);
-    System.out.println("Selection Sort (200):");
-    print(B2, selectionComp);
-
-    int[] B3 = readArrayFromFile(400, "Test400.txt");
-    selectionComp = selectionSortR(B3, 0, B3.length-1);
-    System.out.println("Selection Sort (400):");
-    print(B3, selectionComp);
-
-    int[] B4 = readArrayFromFile(800, "Test800.txt");
-    selectionComp = selectionSortR(B4, 0, B4.length-1);
-    System.out.println("Selection Sort (800):");
-    print(B4, selectionComp);
-
-    int[] B5 = readArrayFromFile(1600, "Test1600.txt");
-    selectionComp = selectionSortR(B5, 0, B5.length-1);
-    System.out.println("Selection Sort (1600):");
-    print(B5, selectionComp);
-
-    int[] B6 = readArrayFromFile(3200, "Test3200.txt");
-    selectionComp = selectionSortR(B6, 0, B6.length-1);
-    System.out.println("Selection Sort (3200):");
-    print(B6, selectionComp);
-
-    // **TEST** Insertion Sort (Recursive)
-    int[] C1 = readArrayFromFile(100, "Test100.txt");
-    int insertionComp = insertionSortR(C1, 0, C1.length-1);
-    System.out.println("Insertion Sort (100):");
-    print(C1, insertionComp);
-
-    int[] C2 = readArrayFromFile(200, "Test200.txt");
-    insertionComp = insertionSortR(C2, 0, C2.length-1);
-    System.out.println("Insertion Sort (200):");
-    print(C2, insertionComp);
-
-    int[] C3 = readArrayFromFile(400, "Test400.txt");
-    insertionComp = insertionSortR(C3, 0, C3.length-1);
-    System.out.println("Insertion Sort (400):");
-    print(C3, insertionComp);
-
-    int[] C4 = readArrayFromFile(800, "Test800.txt");
-    insertionComp = insertionSortR(C4, 0, C4.length-1);
-    System.out.println("Insertion Sort (800):");
-    print(C4, insertionComp);
-
-    int[] C5 = readArrayFromFile(1600, "Test1600.txt");
-    insertionComp = insertionSortR(C5, 0, C5.length-1);
-    System.out.println("Insertion Sort (1600):");
-    print(C5, insertionComp);
-
-    int[] C6 = readArrayFromFile(3200, "Test3200.txt");
-    insertionComp = insertionSortR(C6, 0, C6.length-1);
-    System.out.println("Insertion Sort (3200):");
-    print(C6, insertionComp);
-
-    // Quick Sort (Iterative)
-    int[] D1 = readArrayFromFile(100, "Test100.txt");
-    int quickComp = quickSortI(D1, 0, D1.length-1);
-    System.out.println("Quick Sort (100):");
-    print(D1, quickComp);
-
-    int[] D2 = readArrayFromFile(200, "Test200.txt");
-    quickComp = quickSortI(D2, 0, D2.length-1);
-    System.out.println("Quick Sort (200):");
-    print(D2, quickComp);
-
-    int[] D3 = readArrayFromFile(400, "Test400.txt");
-    quickComp = quickSortI(D3, 0, D3.length-1);
-    System.out.println("Quick Sort (400):");
-    print(D3, quickComp);
-
-    int[] D4 = readArrayFromFile(800, "Test800.txt");
-    quickComp = quickSortI(D4, 0, D4.length-1);
-    System.out.println("Quick Sort (800):");
-    print(D4, quickComp);
-
-    int[] D5 = readArrayFromFile(1600, "Test1600.txt");
-    quickComp = quickSortI(D5, 0, D5.length-1);
-    System.out.println("Quick Sort (1600):");
-    print(D5, quickComp);
-
-    int[] D6 = readArrayFromFile(3200, "Test3200.txt");
-    quickComp = quickSortI(D6, 0, D6.length-1);
-    System.out.println("Quick Sort (3200):");
-    print(D6, quickComp);
+//    createTestFile(100, "Test100.txt");
+//    createTestFile(200, "Test200.txt");
+//    createTestFile(400, "Test400.txt");
+//    createTestFile(800, "Test800.txt");
+//    createTestFile(1600, "Test1600.txt");
+//    createTestFile(3200, "Test3200.txt");
+//
+//    // **TEST** Bubble Sort (Recursive)
+//    int[] A1 = readArrayFromFile(100, "Test100.txt");
+//    int bubbleComp = bubbleSortR(A1, A1.length-1);
+//    System.out.println("Bubble Sort (100):");
+//    print(A1, bubbleComp);
+//
+//    int[] A2 = readArrayFromFile(200, "Test200.txt");
+//    bubbleComp = bubbleSortR(A2, A2.length-1);
+//    System.out.println("Bubble Sort (200):");
+//    print(A2, bubbleComp);
+//
+//    int[] A3 = readArrayFromFile(400, "Test400.txt");
+//    bubbleComp = bubbleSortR(A3, A3.length-1);
+//    System.out.println("Bubble Sort (400):");
+//    print(A3, bubbleComp);
+//
+//    int[] A4 = readArrayFromFile(800, "Test800.txt");
+//    bubbleComp = bubbleSortR(A4, A4.length-1);
+//    System.out.println("Bubble Sort (800):");
+//    print(A4, bubbleComp);
+//
+//    int[] A5 = readArrayFromFile(1600, "Test1600.txt");
+//    bubbleComp = bubbleSortR(A5, A5.length-1);
+//    System.out.println("Bubble Sort (1600):");
+//    print(A5, bubbleComp);
+//
+//    int[] A6 = readArrayFromFile(3200, "Test3200.txt");
+//    bubbleComp = bubbleSortR(A6, A6.length-1);
+//    System.out.println("Bubble Sort (3200):");
+//    print(A6, bubbleComp);
+//
+//    // **TEST**  Selection Sort (Recursive)
+//    int[] B1 = readArrayFromFile(100, "Test100.txt");
+//    int selectionComp = selectionSortR(B1, 0, B1.length-1);
+//    System.out.println("Selection Sort (100):");
+//    print(B1, selectionComp);
+//
+//    int[] B2 = readArrayFromFile(200, "Test200.txt");
+//    selectionComp = selectionSortR(B2, 0, B2.length-1);
+//    System.out.println("Selection Sort (200):");
+//    print(B2, selectionComp);
+//
+//    int[] B3 = readArrayFromFile(400, "Test400.txt");
+//    selectionComp = selectionSortR(B3, 0, B3.length-1);
+//    System.out.println("Selection Sort (400):");
+//    print(B3, selectionComp);
+//
+//    int[] B4 = readArrayFromFile(800, "Test800.txt");
+//    selectionComp = selectionSortR(B4, 0, B4.length-1);
+//    System.out.println("Selection Sort (800):");
+//    print(B4, selectionComp);
+//
+//    int[] B5 = readArrayFromFile(1600, "Test1600.txt");
+//    selectionComp = selectionSortR(B5, 0, B5.length-1);
+//    System.out.println("Selection Sort (1600):");
+//    print(B5, selectionComp);
+//
+//    int[] B6 = readArrayFromFile(3200, "Test3200.txt");
+//    selectionComp = selectionSortR(B6, 0, B6.length-1);
+//    System.out.println("Selection Sort (3200):");
+//    print(B6, selectionComp);
+//
+//    // **TEST** Insertion Sort (Recursive)
+//    int[] C1 = readArrayFromFile(100, "Test100.txt");
+//    int insertionComp = insertionSortR(C1, 0, C1.length-1);
+//    System.out.println("Insertion Sort (100):");
+//    print(C1, insertionComp);
+//
+//    int[] C2 = readArrayFromFile(200, "Test200.txt");
+//    insertionComp = insertionSortR(C2, 0, C2.length-1);
+//    System.out.println("Insertion Sort (200):");
+//    print(C2, insertionComp);
+//
+//    int[] C3 = readArrayFromFile(400, "Test400.txt");
+//    insertionComp = insertionSortR(C3, 0, C3.length-1);
+//    System.out.println("Insertion Sort (400):");
+//    print(C3, insertionComp);
+//
+//    int[] C4 = readArrayFromFile(800, "Test800.txt");
+//    insertionComp = insertionSortR(C4, 0, C4.length-1);
+//    System.out.println("Insertion Sort (800):");
+//    print(C4, insertionComp);
+//
+//    int[] C5 = readArrayFromFile(1600, "Test1600.txt");
+//    insertionComp = insertionSortR(C5, 0, C5.length-1);
+//    System.out.println("Insertion Sort (1600):");
+//    print(C5, insertionComp);
+//
+//    int[] C6 = readArrayFromFile(3200, "Test3200.txt");
+//    insertionComp = insertionSortR(C6, 0, C6.length-1);
+//    System.out.println("Insertion Sort (3200):");
+//    print(C6, insertionComp);
+//
+//    // Quick Sort (Iterative)
+//    int[] D1 = readArrayFromFile(100, "Test100.txt");
+//    int quickComp = quickSortI(D1, 0, D1.length-1);
+//    System.out.println("Quick Sort (100):");
+//    print(D1, quickComp);
+//
+//    int[] D2 = readArrayFromFile(200, "Test200.txt");
+//    quickComp = quickSortI(D2, 0, D2.length-1);
+//    System.out.println("Quick Sort (200):");
+//    print(D2, quickComp);
+//
+//    int[] D3 = readArrayFromFile(400, "Test400.txt");
+//    quickComp = quickSortI(D3, 0, D3.length-1);
+//    System.out.println("Quick Sort (400):");
+//    print(D3, quickComp);
+//
+//    int[] D4 = readArrayFromFile(800, "Test800.txt");
+//    quickComp = quickSortI(D4, 0, D4.length-1);
+//    System.out.println("Quick Sort (800):");
+//    print(D4, quickComp);
+//
+//    int[] D5 = readArrayFromFile(1600, "Test1600.txt");
+//    quickComp = quickSortI(D5, 0, D5.length-1);
+//    System.out.println("Quick Sort (1600):");
+//    print(D5, quickComp);
+//
+//    int[] D6 = readArrayFromFile(3200, "Test3200.txt");
+//    quickComp = quickSortI(D6, 0, D6.length-1);
+//    System.out.println("Quick Sort (3200):");
+//    print(D6, quickComp);
   }
 }

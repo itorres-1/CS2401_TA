@@ -287,7 +287,10 @@ public class Pena5 implements Lab5Interface {
      * @param str is a string parameter to help us take in a string needed to read from file
      * @return we return the array that is created from reading the file.
      */
-    public static int[] readFile(String str) {
+    public static int[] readFile(String str)
+
+
+    {
         int counter = 0;
         try {
             FileReader file = new FileReader (str);
@@ -326,16 +329,16 @@ public class Pena5 implements Lab5Interface {
         Pena5 k = new Pena5();
         int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
 
-        System.out.print(Util.titleString("BubbleSort"));
+        System.out.print(Util.titleString("BubbleSort",'-'));
         k.rBubbleSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("InsertionSort"));
+        System.out.print(Util.titleString("InsertionSort",'-'));
         k.rInsertionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("SelectionSort"));
+        System.out.print(Util.titleString("SelectionSort",'-'));
         k.rSelectionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("QuickSort"));
+        System.out.print(Util.titleString("QuickSort",'-'));
         k.iQuickSort(unsortedArray.clone());
 
 //        try {

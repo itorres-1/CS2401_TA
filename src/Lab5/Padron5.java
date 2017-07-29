@@ -1,6 +1,7 @@
 package Lab5;
 
 import Testers.LabInterfaces.Lab5Interface;
+import Testers.Util;
 
 import java.io.*;
 import java.util.Random;
@@ -13,21 +14,25 @@ import java.util.Scanner;
  */
 public class Padron5 implements Lab5Interface {
     public static void main(String[] Args){
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Number length");
-        int numberLength = scan.nextInt();
-        createFile(numberLength);
-        int[] a = readFile(numberLength);
-        int n= quickSortHelp(a,0);
 
-        for (int i = 0;i<a.length;i++){
-            System.out.print(a[i] + " ");
-        }
+        //k.iQuickSort(unsortedArray.clone());
+
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Number length");
+//        int numberLength = scan.nextInt();
+//        createFile(numberLength);
+//        int[] a = readFile(numberLength);
+//        int n= quickSortHelp(a,0);
+//
+//        for (int i = 0;i<a.length;i++){
+//            System.out.print(a[i] + " ");
+//        }
 
     }
 
 
     public static int selectionSortHelp(int[] a,int i,int counter){
+        Util.print1Dint(a);
         if (i!=a.length){
             counter++;
             int min = i;
@@ -51,6 +56,7 @@ public class Padron5 implements Lab5Interface {
         return counter;
     }
     public static int bubbleSortHelp(int[] a, int i,int counter){
+        Util.print1Dint(a);
         boolean needNextPass = true;
         if (i!=a.length && needNextPass){
             counter++;
@@ -72,6 +78,7 @@ public class Padron5 implements Lab5Interface {
         return counter;
     }
     public static int insertionSortHelp(int[] a, int i,int counter){
+        Util.print1Dint(a);
         if (i != a.length){
             counter++;
             int current = a[i];

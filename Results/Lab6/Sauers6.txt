@@ -1,0 +1,77 @@
+
+Student: Sauers
+Lab: 6
+
+************************* Good Input *************************
+
+
+_________________________ "- 3 ^ 2 2" _________________________
+
+Correct: -1.0
+LStack: -1.0
+AStack crashed :(
+Correctness = 16.666666666666668
+
+________________________ "/ + 1 10 2" ________________________
+
+Correct: 5.5
+LStack: 2.0
+AStack crashed :(
+Correctness = 16.666666666666668
+
+___________________ "* / ^ - + 2 3 1 2 5 9" ___________________
+
+Correct: 28.8
+LStack: 3.2
+AStack crashed :(
+Correctness = 16.666666666666668
+
+************************** Bad Input **************************
+
+
+_____________________________ "" _____________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 0.0
+
+__________________________ "+ 1 1 1" __________________________
+
+Correct: null
+LStack: 2.0
+AStack crashed :(
+Robustness = 0.0
+
+____________________________ "/ 1" ____________________________
+
+Correct: null
+LStack: null
+AStack crashed :(
+Robustness = 8.333333333333334
+
+___________________________ "+ 1 A" ___________________________
+
+Correct: null
+LStack: null
+AStack crashed :(
+Robustness = 16.666666666666668
+
+___________________________ "1 1 1" ___________________________
+
+Correct: null
+LStack: 1.0
+AStack crashed :(
+Robustness = 16.666666666666668
+
+___________________________ "/ 1 0" ___________________________
+
+Correct: null
+LStack crashed :(
+AStack crashed :(
+Robustness = 16.666666666666668
+
+$$$$$$$$$$$$$$$$$$$$$$$$$ Total Grade $$$$$$$$$$$$$$$$$$$$$$$$$
+
+Correctness: 16.666666666666668
+Robustness: 16.666666666666668

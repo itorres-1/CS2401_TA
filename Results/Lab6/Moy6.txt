@@ -1,0 +1,85 @@
+
+Student: Moy
+Lab: 6
+
+************************* Good Input *************************
+
+
+_________________________ "- 3 ^ 2 2" _________________________
+
+Correct: -1.0
+LStack: -1.0
+AStack: -1.0
+Correctness = 33.333333333333336
+
+________________________ "/ + 1 10 2" ________________________
+
+Correct: 5.5
+LStack: 5.5
+AStack: 5.5
+Correctness = 66.66666666666667
+
+___________________ "* / ^ - + 2 3 1 2 5 9" ___________________
+
+Correct: 28.8
+LStack: 28.8
+AStack: 28.8
+Correctness = 100.00000000000001
+
+************************** Bad Input **************************
+
+
+_____________________________ "" _____________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 16.666666666666668
+
+__________________________ "+ 1 1 1" __________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 33.333333333333336
+
+____________________________ "/ 1" ____________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 50.00000000000001
+
+___________________________ "+ 1 A" ___________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 66.66666666666667
+
+___________________________ "1 1 1" ___________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 83.33333333333333
+
+___________________________ "/ 1 0" ___________________________
+
+Correct: null
+LStack: Infinity
+AStack: Infinity
+Robustness = 83.33333333333333
+
+$$$$$$$$$$$$$$$$$$$$$$$$$ Total Grade $$$$$$$$$$$$$$$$$$$$$$$$$
+
+Correctness: 100.00000000000001
+Robustness: 83.33333333333333
+
+
+stupidUser?
+Design: no need to have dedicated methods to pop pop then combine. when operation symbol encountered,
+we're gonna pop two operands regardless. Guideline: make a dedicated method for something when it's repeated
+and a lot of lines of code.
+
+No implemented stacks? Just used Java's implementation? Implementing them was the majority of the point!

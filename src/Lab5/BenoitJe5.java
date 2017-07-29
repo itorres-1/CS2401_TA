@@ -271,16 +271,16 @@ public class BenoitJe5 implements Lab5Interface {
         BenoitJe5 k = new BenoitJe5();
         int[] unsortedArray = {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
 
-        System.out.print(Util.titleString("BubbleSort"));
+        System.out.print(Util.titleString("BubbleSort",'-'));
         k.rBubbleSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("InsertionSort"));
+        System.out.print(Util.titleString("InsertionSort",'-'));
         k.rInsertionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("SelectionSort"));
+        System.out.print(Util.titleString("SelectionSort",'-'));
         k.rSelectionSort(unsortedArray.clone());
 
-        System.out.print(Util.titleString("QuickSort"));
+        System.out.print(Util.titleString("QuickSort",'-'));
         k.iQuickSort(unsortedArray.clone());
     }
 }

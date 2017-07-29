@@ -236,7 +236,7 @@ public class Lab2Tester {
                        {3,2,1}};
 
         // Sum (Bad) 2x3 + 3x2
-        Util.titleString("Sum (bad)  ");
+        Util.titleString("Sum (bad)  ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = sum(cloneMatrix(_2x3),cloneMatrix(_3x2)));
         try {
@@ -257,7 +257,7 @@ public class Lab2Tester {
         
         
         //Sum (Bad) 3x2 + 2x3  - 8.33 pts
-        Util.titleString("Sum (bad) ");
+        Util.titleString("Sum (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = sum(cloneMatrix(_3x2),cloneMatrix(_2x3)));
         try {
@@ -274,7 +274,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Sum (Bad) 3x2 + 3x3
-        Util.titleString("Sum (bad) ");
+        Util.titleString("Sum (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = sum(cloneMatrix(_3x2),cloneMatrix(_3x3)));
         try {
@@ -291,7 +291,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Sum (Bad) 3x3 + 3x2
-        Util.titleString("Sum (bad) ");
+        Util.titleString("Sum (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = sum(cloneMatrix(_3x3),cloneMatrix(_3x2)));
         try {
@@ -308,7 +308,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Sum (Good) 2x3 + 2x3 - 4.76 pts
-        Util.titleString("Sum (good) ");
+        Util.titleString("Sum (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = sum(cloneMatrix(_2x3),cloneMatrix(_2x3)));
         try {
@@ -325,7 +325,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Sum (Good) 3x2 + 3x2
-        Util.titleString("Sum (good) ");
+        Util.titleString("Sum (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = sum(cloneMatrix(_3x2),cloneMatrix(_3x2)));
         try {
@@ -342,7 +342,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Sum (Good) 3x3 + 3x3
-        Util.titleString("Sum (good) ");
+        Util.titleString("Sum (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = sum(cloneMatrix(_3x3),cloneMatrix(_3x3)));
         try {
@@ -359,7 +359,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Difference (Bad) 2x3 + 3x2 - 6.25
-        Util.titleString("Difference (bad)  ");
+        Util.titleString("Difference (bad)  ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = difference(cloneMatrix(_2x3),cloneMatrix(_3x2)));
         try {
@@ -376,7 +376,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Difference (Bad) 3x2 + 2x3
-        Util.titleString("Difference (bad) ");
+        Util.titleString("Difference (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = difference(cloneMatrix(_3x2),cloneMatrix(_2x3)));
         try {
@@ -393,7 +393,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Difference (Bad) 3x2 + 3x3
-        Util.titleString("Difference (bad) ");
+        Util.titleString("Difference (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = difference(cloneMatrix(_3x2),cloneMatrix(_3x3)));
         try {
@@ -410,7 +410,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Difference (Bad) 3x3 + 3x2
-        Util.titleString("Difference (bad) ");
+        Util.titleString("Difference (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = difference(cloneMatrix(_3x3),cloneMatrix(_3x2)));
         try {
@@ -427,7 +427,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Difference (Good) 2x3 + 2x3 -  4.76 pts
-        Util.titleString("Difference (good) ");
+        Util.titleString("Difference (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = difference(cloneMatrix(_2x3),cloneMatrix(_2x3)));
         try {
@@ -444,7 +444,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Difference (Good) 3x2 + 3x2
-        Util.titleString("Difference (good) ");
+        Util.titleString("Difference (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = difference(cloneMatrix(_3x2),cloneMatrix(_3x2)));
         try {
@@ -461,7 +461,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Difference (Good) 3x3 + 3x3
-        Util.titleString("Difference (good) ");
+        Util.titleString("Difference (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = difference(cloneMatrix(_3x3),cloneMatrix(_3x3)));
         try {
@@ -480,7 +480,7 @@ public class Lab2Tester {
 
         
         //TODO *************************** intMultiplication! - 14.29 pts
-        Util.titleString("Integer Multiplication (good) ");
+        Util.titleString("Integer Multiplication (good) ",'-');
         printMatrix("input w/ r = 3: ", cloneMatrix(_3x3));
         printMatrix("correct:",correct = intMultiplication(cloneMatrix(_3x3),3));
         try {
@@ -499,7 +499,7 @@ public class Lab2Tester {
 
 
         //Matrix Product (Bad) 3x2 + 3x3 - 8.33 pts
-        Util.titleString("Matrix Product (bad) ");
+        Util.titleString("Matrix Product (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_3x2),cloneMatrix(_3x3)));
         try {
@@ -516,7 +516,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Matrix Product (Bad) 2x3 + 2x3
-        Util.titleString("Matrix Product (bad) ");
+        Util.titleString("Matrix Product (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_2x3),cloneMatrix(_2x3)));
         try {
@@ -533,7 +533,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Matrix Product (Bad) 3x2 + 3x2
-        Util.titleString("Matrix Product (bad) ");
+        Util.titleString("Matrix Product (bad) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_3x2),cloneMatrix(_3x2)));
         try {
@@ -550,7 +550,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Matrix Product (Good) 2x3 + 3x2 -  3.57 pts
-        Util.titleString("Matrix Product (good)  ");
+        Util.titleString("Matrix Product (good)  ",'-');
         printMatrices("input 1:",cloneMatrix(_2x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_2x3),cloneMatrix(_3x2)));
         try {
@@ -567,7 +567,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Matrix Product (Good) 3x2 + 2x3
-        Util.titleString("Matrix Product (good) ");
+        Util.titleString("Matrix Product (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x2),"input 2:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_3x2),cloneMatrix(_2x3)));
         try {
@@ -584,7 +584,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Matrix Product (Good) 3x3 + 3x2
-        Util.titleString("Matrix Product (good) ");
+        Util.titleString("Matrix Product (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_3x3),cloneMatrix(_3x2)));
         try {
@@ -601,7 +601,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Matrix Product (Good) 3x3 + 3x3
-        Util.titleString("Matrix Product (good) ");
+        Util.titleString("Matrix Product (good) ",'-');
         printMatrices("input 1:",cloneMatrix(_3x3),"input 2:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = matrixProduct(cloneMatrix(_3x3),cloneMatrix(_3x3)));
         try {
@@ -620,7 +620,7 @@ public class Lab2Tester {
 
 
         //TODO Transpose 3x2 - 4.76
-        Util.titleString("Transpose ");
+        Util.titleString("Transpose ",'-');
         printMatrix("input:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = transpose(cloneMatrix(_3x2)));
         try {
@@ -637,7 +637,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Transpose 2x3
-        Util.titleString("Transpose ");
+        Util.titleString("Transpose ",'-');
         printMatrix("input:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = transpose(cloneMatrix(_2x3)));
         try {
@@ -654,7 +654,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Transpose 3x3
-        Util.titleString("Transpose ");
+        Util.titleString("Transpose ",'-');
         printMatrix("input:",cloneMatrix(_3x3));
         printMatrix("correct:",correct = transpose(cloneMatrix(_3x3)));
         try {
@@ -673,7 +673,7 @@ public class Lab2Tester {
 
 
         //TODO Symmetric (Good) 3x2  3.57
-        Util.titleString("Symmetric (bad) ");
+        Util.titleString("Symmetric (bad) ",'-');
         printMatrix("input:",cloneMatrix(_3x2));
         System.out.println("correct:"+(correctBool = isSymmetric(cloneMatrix(_3x2))));
         try {
@@ -690,7 +690,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Symmetric (Good) 2x3
-        Util.titleString("Symmetric (bad) ");
+        Util.titleString("Symmetric (bad) ",'-');
         printMatrix("input:",cloneMatrix(_2x3));
         System.out.println("correct:"+(correctBool = isSymmetric(cloneMatrix(_2x3))));
         try {
@@ -707,7 +707,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Symmetric (Good) 3x3
-        Util.titleString("Symmetric (bad) ");
+        Util.titleString("Symmetric (bad) ",'-');
         printMatrix("input:",cloneMatrix(_3x3));
         System.out.println("correct:"+(correctBool = isSymmetric(cloneMatrix(_3x3))));
         try {
@@ -724,7 +724,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //TODO Symmetric (Good)
-        Util.titleString("Symmetric (good) ");
+        Util.titleString("Symmetric (good) ",'-');
         printMatrix("input:",cloneMatrix(sym));
         System.out.println("correct:"+(correctBool = isSymmetric(cloneMatrix(sym))));
         try {
@@ -743,7 +743,7 @@ public class Lab2Tester {
 
 
         //Power (Bad) 3x2 12.5
-        Util.titleString("Power (bad) ");
+        Util.titleString("Power (bad) ",'-');
         printMatrix("input w/k = 3:",cloneMatrix(_3x2));
         printMatrix("correct:",correct = pow(cloneMatrix(_3x2),3));
         try {
@@ -760,7 +760,7 @@ public class Lab2Tester {
         }
         Util.printGradeSoFar(correctness,robustness);
         //Power (Bad) 2x3
-        Util.titleString("Power (bad) ");
+        Util.titleString("Power (bad) ",'-');
         printMatrix("input w/k = 3:",cloneMatrix(_2x3));
         printMatrix("correct:",correct = pow(cloneMatrix(_2x3),3));
         try {
@@ -778,7 +778,7 @@ public class Lab2Tester {
         Util.printGradeSoFar(correctness,robustness);
         //TODO Power (Good) 3x3 3.57
         for(int i = 1; i < 5; ++i){
-            Util.titleString("Power (good) ");
+            Util.titleString("Power (good) ",'-');
             printMatrix("input w/ k = "+i+":",cloneMatrix(_3x3));
             printMatrix("correct:",correct = pow(cloneMatrix(_3x3),i));
             try {
@@ -796,7 +796,7 @@ public class Lab2Tester {
             Util.printGradeSoFar(correctness,robustness);
         }
 
-        Util.titleString("Final Grade: ");
+        Util.titleString("Final Grade: ",'*');
         Util.printGradeSoFar(correctness,robustness);
         System.out.println();
         if (correctness > 99.9) System.out.println("GOD MODE");

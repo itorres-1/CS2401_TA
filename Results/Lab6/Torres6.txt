@@ -1,0 +1,80 @@
+
+Student: Torres
+Lab: 6
+
+************************* Good Input *************************
+
+
+_________________________ "- 3 ^ 2 2" _________________________
+
+Correct: -1.0
+LStack: -1.0
+AStack: -1.0
+Correctness = 33.333333333333336
+
+________________________ "/ + 1 10 2" ________________________
+
+Correct: 5.5
+LStack: null
+AStack: infinite loop
+Correctness = 33.333333333333336
+
+________________ "* / ^ - + 2 3 10 2 250 100" ________________
+
+Correct: 10.0
+LStack: null
+AStack: infinite loop
+Correctness = 33.333333333333336
+
+************************** Bad Input **************************
+
+
+_____________________________ "" _____________________________
+
+Correct: null
+LStack: null
+AStack: infinite loop
+Robustness = 8.333333333333334
+
+__________________________ "+ 1 1 1" __________________________
+
+Correct: null
+LStack: 2.0
+AStack: 2.0
+Robustness = 8.333333333333334
+
+____________________________ "/ 1" ____________________________
+
+Correct: null
+LStack: null
+AStack: null
+Robustness = 25.0
+
+___________________________ "+ 1 A" ___________________________
+
+Correct: null
+LStack: null
+AStack: infinite loop
+Robustness = 33.333333333333336
+
+___________________________ "1 1 1" ___________________________
+
+Correct: null
+LStack: 1.0
+AStack: 1.0
+Robustness = 33.333333333333336
+
+___________________________ "/ 1 0" ___________________________
+
+Correct: null
+LStack: Infinity
+AStack: Infinity
+Robustness = 33.333333333333336
+
+$$$$$$$$$$$$$$$$$$$$$$$$$ Total Grade $$$$$$$$$$$$$$$$$$$$$$$$$
+
+Correctness: 33.333333333333336
+Robustness: 33.333333333333336
+
+
+Lab Grade: 67

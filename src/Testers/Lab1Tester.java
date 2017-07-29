@@ -138,7 +138,7 @@ public class Lab1Tester {
 
 
         // isPermutation -
-        Util.titleString("isPermutation");
+        Util.titleString("isPermutation",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation1.clone());
         try {
@@ -156,7 +156,7 @@ public class Lab1Tester {
         System.out.println(isPermutation(notPermutation1.clone()));
         Util.printGradeSoFar(correctness, robustness);
         // isPermutation -
-        Util.titleString("isPermutation");
+        Util.titleString("isPermutation",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation2.clone());
         try {
@@ -174,7 +174,7 @@ public class Lab1Tester {
         System.out.println(isPermutation(notPermutation2.clone()));
         Util.printGradeSoFar(correctness, robustness);
         // isPermutation +
-        Util.titleString("isPermutation");
+        Util.titleString("isPermutation",'-');
         System.out.print("Test Input: ");
         printArray(permutation1.clone());
         try {
@@ -192,7 +192,7 @@ public class Lab1Tester {
         Util.printGradeSoFar(correctness, robustness);
         //----------------------------
         // Composition -
-        Util.titleString("Composition");
+        Util.titleString("Composition",'-');
         System.out.print("Test Input 1: ");
         printArray(notPermutation1.clone());
         System.out.print("Test Input 2: ");
@@ -211,7 +211,7 @@ public class Lab1Tester {
         printArray(composition(notPermutation1.clone(), notPermutation1.clone()));
         Util.printGradeSoFar(correctness, robustness);
         // Composition -
-        Util.titleString("Composition");
+        Util.titleString("Composition",'-');
         System.out.print("Test Input 1: ");
         printArray(notPermutation2.clone());
         System.out.print("Test Input 2: ");
@@ -231,7 +231,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Composition +
-        Util.titleString("Composition");
+        Util.titleString("Composition",'-');
         System.out.print("Test Input 1: ");
         printArray(permutation1.clone());
         System.out.print("Test Input 2: ");
@@ -253,7 +253,7 @@ public class Lab1Tester {
         Util.printGradeSoFar(correctness, robustness);
         //----------------------------
         // Inverse -
-        Util.titleString("Inverse");
+        Util.titleString("Inverse",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation1.clone());
         try {
@@ -270,7 +270,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Inverse -
-        Util.titleString("Inverse");
+        Util.titleString("Inverse",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation2.clone());
         try {
@@ -287,7 +287,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Inverse +
-        Util.titleString("Inverse");
+        Util.titleString("Inverse",'-');
         System.out.print("Test Input: ");
         printArray(permutation1.clone());
         try {
@@ -305,7 +305,7 @@ public class Lab1Tester {
         Util.printGradeSoFar(correctness, robustness);
         //----------------------------
         // Pow -
-        Util.titleString("Exponential Composition");
+        Util.titleString("Exponential Composition",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation1.clone());
         try {
@@ -322,7 +322,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Pow -
-        Util.titleString("Exponential Composition");
+        Util.titleString("Exponential Composition",'-');
         System.out.print("Test Input: ");
         printArray(notPermutation2.clone());
         try {
@@ -339,7 +339,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Pow +
-        Util.titleString("Exponential Composition");
+        Util.titleString("Exponential Composition",'-');
         System.out.println("K = 1");
         System.out.print("Test Input: ");
         printArray(permutation1.clone());
@@ -356,7 +356,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Pow +
-        Util.titleString("Exponential Composition");
+        Util.titleString("Exponential Composition",'-');
         System.out.println("K = 2");
         System.out.print("Test Input: ");
         printArray(permutation1.clone());
@@ -373,7 +373,7 @@ public class Lab1Tester {
         printArray(myResult);
         Util.printGradeSoFar(correctness, robustness);
         // Pow +
-        Util.titleString("Exponential Composition");
+        Util.titleString("Exponential Composition",'-');
         System.out.println("K = 3");
         System.out.print("Test Input: ");
         printArray(permutation1.clone());
@@ -388,7 +388,7 @@ public class Lab1Tester {
         }
         System.out.print("My result: ");
         printArray(myResult);
-        Util.titleString("Total Points");
+        Util.titleString("Total Points",'*');
         Util.printGradeSoFar(correctness, robustness);
     }
 }
