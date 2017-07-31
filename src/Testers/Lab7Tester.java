@@ -99,6 +99,21 @@ public class Lab7Tester {
             }
         }
 
+        //Pre Order
+        public ArrayList<String> preOrder(){
+            ArrayList<String> elements = new ArrayList<>();
+            preOrderHelper(elements,root);
+            return elements;
+        }
+        public void preOrderHelper(ArrayList<String> elements, TreeNode node){
+            if (node != null){
+                elements.add(node.data);
+                preOrderHelper(elements,node.leftChild);
+                preOrderHelper(elements,node.rightChild);
+            }
+        }
+
+        //In order
         public ArrayList<String> inOrder(){
             ArrayList<String> elements = new ArrayList<>();
             inOrderHelper(elements,root);
@@ -112,8 +127,28 @@ public class Lab7Tester {
             }
         }
 
+        //Post Order
+        public ArrayList<String> postOrder(){
+            ArrayList<String> elements = new ArrayList<>();
+            postOrderHelper(elements,root);
+            return elements;
+        }
+        public void postOrderHelper(ArrayList<String> elements, TreeNode node){
+            if (node != null){
+                postOrderHelper(elements,node.leftChild);
+                postOrderHelper(elements,node.rightChild);
+                elements.add(node.data);
+            }
+        }
     }
 
+    public ArrayList<String> sternBrocotTreePreOrder(int depth) {
+        if (depth >= 0) {
+            SternBrocotTree t = new SternBrocotTree(depth);
+            return t.preOrder();
+        }
+        return null;
+    }
     public ArrayList<String> sternBrocotTreeInOrder(int depth) {
         if (depth >= 0) {
             SternBrocotTree t = new SternBrocotTree(depth);
@@ -121,11 +156,23 @@ public class Lab7Tester {
         }
         return null;
     }
+    public ArrayList<String> sternBrocotTreePostOrder(int depth) {
+        if (depth >= 0) {
+            SternBrocotTree t = new SternBrocotTree(depth);
+            return t.postOrder();
+        }
+        return null;
+    }
 
-//    @Override
-//    public ArrayList<String> sternBrocotTreePostOrder(int depth) {
-//        return null;
-//    }
+    public static int getDepth(TreeNode n){
+        if (n == null) return -1;
+        else{
+            int left = getDepth(n.leftChild);
+            int right = getDepth( n.rightChild);
+            if (left>right) return 1+left;
+            return 1+right;
+        }
+    }
 //
 //    @Override
 //    public ArrayList<String> sternBrocotTreePreOrder(int depth) {
@@ -141,10 +188,27 @@ public class Lab7Tester {
     }
 
     public static void main(String[] args) {
+
+        int[] testArray = new int[1];
+        System.out.println(testArray);
+        int[] testArray2 = new int[6];
+        System.out.println(testArray2);
+        SternBrocotTree tree = new SternBrocotTree(3);
+        System.out.println(tree);
+        System.out.println(tree);
+        System.out.println(getDepth(tree.root));
+
+        Lab6Tester k = new Lab6Tester();
+        System.out.println(k.listPrefixCalc(""));
+
+        int depth = 3;
         Lab7Tester tester = new Lab7Tester();
-        ArrayList<String> t = tester.sternBrocotTreeInOrder(3);
-        ArrayList<String> s = tester.sternBrocotTreeInOrder(3);
+        ArrayList<String> t = tester.sternBrocotTreePreOrder(depth);
         System.out.println(t);
-        System.out.println(checker(t,s));
+        t = tester.sternBrocotTreeInOrder(depth);
+        System.out.println(t);
+        t = tester.sternBrocotTreePostOrder(depth);
+        System.out.println(t);
+
     }
 }
