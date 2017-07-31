@@ -188,27 +188,6 @@ public class Lab7Tester {
     }
 
     public static void main(String[] args) {
-
-        int[] testArray = new int[1];
-        System.out.println(testArray);
-        int[] testArray2 = new int[6];
-        System.out.println(testArray2);
-        SternBrocotTree tree = new SternBrocotTree(3);
-        System.out.println(tree);
-        System.out.println(tree);
-        System.out.println(getDepth(tree.root));
-
         Lab6Tester k = new Lab6Tester();
-        System.out.println(k.listPrefixCalc(""));
-
-        int depth = 3;
-        Lab7Tester tester = new Lab7Tester();
-        ArrayList<String> t = tester.sternBrocotTreePreOrder(depth);
-        System.out.println(t);
-        t = tester.sternBrocotTreeInOrder(depth);
-        System.out.println(t);
-        t = tester.sternBrocotTreePostOrder(depth);
-        System.out.println(t);
-
     }
 }
